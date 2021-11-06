@@ -44,12 +44,17 @@ nav ul li a {
 
 a.active, a:hover {
   background: #1b9bff;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
+  transition: .5s;}
 
-}
+  .checkbtn{
+    font-size: 13px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  #check{
+    display: none;
+  }
+
