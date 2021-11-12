@@ -1,54 +1,62 @@
-*{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
 }
-body{
+
+body {
   height: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:orangered;
-  text-align:center;
+  color: orangered;
+  text-align: center;
   background-color: darkslategrey;
-  margin:0;
+  margin: 0;
   padding: 0;
   height: 100vh;
 }
-nav{
+
+nav {
   background: hsla(0, 0%, 1%, 0.816);
   height: 80px;
   width: 100%;
 }
-label.logo{
+
+label.logo {
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
-  color:rgb(230, 116, 75);
-  font-family:'Playfair Display', serif;
+  color: rgb(230, 116, 75);
+  font-family: 'Playfair Display', serif;
 }
-nav ul{
+
+nav ul {
   float: right;
   margin-right: 20px;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
+
+a.active, a:hover {
   background: rgb(230, 116, 75);
   transition: .5s;
 }
-.checkbtn{
+
+.checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -57,23 +65,26 @@ a.active,a:hover{
   cursor: pointer;
   display: none;
 }
-#check{
+
+#check {
   display: none;
 }
-@media (max-width: 952px){
-  label.logo{
+
+@media (max-width: 952px) {
+  label.logo {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 16px;
   }
 }
-@media (max-width: 858px){
-  .checkbtn{
+
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
   }
-  ul{
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -83,37 +94,35 @@ a.active,a:hover{
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+  nav ul li a {
     font-size: 20px;
   }
-  a:hover,a.active{
+  a:hover, a.active {
     background: none;
     color: orangered;
   }
-  #check:checked ~ ul{
+  #check:checked~ul {
     left: 0;
   }
 }
+
 .hero-image {
-  background-image: linear-gradient(
-    rgba(10, 9, 9, 0.5), 
-    rgba(5, 5, 5, 0.034)),
-     url("/img/group\ of\ people.jpg");
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     height: 80%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  background-image: linear-gradient( rgba(10, 9, 9, 0.5), rgba(5, 5, 5, 0.034)), url("/img/group\ of\ people.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
+/*
 .hero-image .hero text {
   color: rgb(44, 6, 6);
   text-align: center;
@@ -129,25 +138,108 @@ a.active,a:hover{
   font-size: 30px;
   font-weight: 500;
   line-height: 10px;
-}
+} */
 
-.hero-image .hero-btn{
+.hero-image .hero-btn {
   text-decoration: none;
   color: #fff;
   background: #000;
   padding: 10px 30px;
   border-radius: 5px;
   display: inline-block;
+  position: bottom;
 }
 
-.hero-image .hero-btn:hover{
+.hero-image .hero-btn:hover {
   background: #fff;
   color: #000;
-
 }
 
 
-  /*
+.container-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  margin-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-basis: 100%; /* I want to streach this out to meet and have them side by side*/
+  
+}
+
+.container-1 div {
+  border: 3px orangered solid;
+  padding: 25px;
+  margin-top: 25;
+  color: black;
+}
+
+.box-1 {
+  width: 45%;
+  
+   
+}
+
+.box-2 {
+  width: 45%;
+
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-basis: 100%; /* I want to streach this out to meet and have them side by side*/
+  
+}
+
+.container-2 div {
+  border: 3px orangered solid;
+  padding: 25px;
+  margin-top: 25;
+  color: black;
+}
+
+.box-3 {
+  width: 10px;
+}
+
+.container-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex-basis: 100%; 
+}
+
+.container-3 div {
+  border: 3px orangered solid;
+  padding: 25px;
+  margin-top: 25;
+  color: black;
+}
+
+.box-4 {
+  width: 45px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+  color: orangered;
+}
+/*
 }
 .coach{
   background: orangered no-repeat;
@@ -252,7 +344,6 @@ hr{
   background: #fff;
   color: #000;
 }*/
-
 
 /*section p{
   max-width: 800px;
