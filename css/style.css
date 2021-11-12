@@ -155,7 +155,6 @@ a.active, a:hover {
   color: #000;
 }
 
-
 .container-1 {
   display: flex;
   align-items: center;
@@ -164,8 +163,8 @@ a.active, a:hover {
   margin-top: 75px;
   padding-left: 50px;
   padding-right: 50px;
-  flex-basis: 100%; /* I want to streach this out to meet and have them side by side*/
-  
+  flex-basis: 100%;
+  /* I want to streach this out to meet and have them side by side*/
 }
 
 .container-1 div {
@@ -177,25 +176,22 @@ a.active, a:hover {
 
 .box-1 {
   width: 45%;
-  
-   
 }
 
 .box-2 {
   width: 45%;
-
 }
 
 .container-2 {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   margin-top: 75px;
   padding-left: 50px;
   padding-right: 50px;
-  flex-basis: 100%; /* I want to streach this out to meet and have them side by side*/
-  
+  flex-basis: 100%;
+  /* I want to streach this out to meet and have them side by side*/
 }
 
 .container-2 div {
@@ -207,41 +203,71 @@ a.active, a:hover {
 
 .box-3 {
   width: 10px;
+  order: 1;
 }
-
-.container-3 {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  margin-top: 75px;
-  padding-left: 50px;
-  padding-right: 50px;
-  flex-basis: 100%; 
-}
-
-.container-3 div {
-  border: 3px orangered solid;
-  padding: 25px;
-  margin-top: 25;
-  color: black;
-}
-
 .box-4 {
   width: 45px;
+  order: 2;
 }
+.box-5 {
+  width: 45px;
+  order: 3;
+}
+.box-6 {
+  width: 45px;
+  order: 4;
+}
+
+
+
+
+@media(min-width:858px){
+  .container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin-top: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-basis: 100%;}
+    /* I want to streach this out to meet and have them side by side*/
+    .container-2 {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      margin-top: 75px;
+      padding-left: 50px;
+      padding-right: 50px;
+      flex-basis: 100%;
+      /* I want to streach this out to meet and have them side by side*/
+    }
+  }
+
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-h1{
+h1 {
   color: orangered;
 }
+
+.foot {
+  background: orangered no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*
 }
-.coach{
+.foot{
   background: orangered no-repeat;
   background-size: cover;
  /* height: calc(100vh - 80px);
