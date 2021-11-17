@@ -11,7 +11,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: orangered;
   text-align: center;
-  background-color: darkslategrey;
+  background-color:#000;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -80,10 +80,14 @@ a.active, a:hover {
   }
 }
 
-@media (max-width: 858px) {
+@media (max-width: 768px) {
   .checkbtn {
     display: block;
   }
+ body{
+   color: #fff;
+ }
+  
   ul {
     position: fixed;
     width: 100%;
@@ -117,9 +121,11 @@ a.active, a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+ /* position: relative;*/
 }
 
 /*
@@ -147,7 +153,8 @@ a.active, a:hover {
   padding: 10px 30px;
   border-radius: 5px;
   display: inline-block;
-  position: bottom;
+  position: absolute;
+  top: 0;
 }
 
 .hero-image .hero-btn:hover {
@@ -164,11 +171,12 @@ a.active, a:hover {
   padding-left: 50px;
   padding-right: 50px;
   flex-basis: 100%;
+  
   /* I want to streach this out to meet and have them side by side*/
 }
 
 .container-1 div {
-  border: 3px orangered solid;
+  border: 10px orangered solid;
   padding: 25px;
   margin-top: 25;
   color: black;
@@ -176,47 +184,61 @@ a.active, a:hover {
 
 .box-1 {
   width: 45%;
+  background-color: teal;
+  order: 1;
+  border-radius: 10%;
+  
 }
-
 .box-2 {
   width: 45%;
+  background-color: teal;
+  border-radius: 10%;
+  order: 2;
 }
 
 .container-2 {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  margin-top: 75px;
-  padding-left: 50px;
-  padding-right: 50px;
-  flex-basis: 100%;
+  height: auto;
+  width: 100%;
+  flex-direction: column-reverse;
   /* I want to streach this out to meet and have them side by side*/
 }
 
 .container-2 div {
-  border: 3px orangered solid;
+height: auto;
+  margin: 50px;
+  border: 4px blue solid;
+  background-color: rgb(255, 187, 0);
+  /*border: 5px orangered solid;
   padding: 25px;
   margin-top: 25;
-  color: black;
+  color: black; */
 }
 
+
+.box {
+  width:100%;
+  padding: 25px;
+  margin-top: 25;
+  color: white;
+  justify-content: space-between;
+}
+.box img{
+  max-width: 100%;
+}
+
+
 .box-3 {
-  width: 10px;
-  order: 1;
-}
-.box-4 {
-  width: 45px;
-  order: 2;
-}
-.box-5 {
-  width: 45px;
-  order: 3;
-}
-.box-6 {
-  width: 45px;
+  background-color: white;
   order: 4;
 }
+
+
+.limit-img-size{
+  max-width: 100%;
+
+}
+
 
 
 
@@ -231,6 +253,7 @@ a.active, a:hover {
     padding-left: 50px;
     padding-right: 50px;
     flex-basis: 100%;}
+  
     /* I want to streach this out to meet and have them side by side*/
     .container-2 {
       display: flex;
@@ -243,6 +266,14 @@ a.active, a:hover {
       flex-basis: 100%;
       /* I want to streach this out to meet and have them side by side*/
     }
+    .limit-img-size{
+      max-width: 500px;
+      
+    }
+    .box{
+      width: 45%;
+    }
+    
   }
 
 
@@ -253,6 +284,7 @@ img {
 
 h1 {
   color: orangered;
+
 }
 
 .foot {
@@ -264,6 +296,8 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+
+
 
 /*
 }
