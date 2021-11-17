@@ -116,7 +116,8 @@ a.active, a:hover {
 }
 
 .hero-image {
-  background-image: linear-gradient( rgba(10, 9, 9, 0.5), rgba(5, 5, 5, 0.034)), url("/img/herogym.jpg");
+  background-image: linear-gradient( rgba(10, 9, 9, 0.5),
+  rgba(5, 5, 5, 0.034)), url("/img/herogym.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
